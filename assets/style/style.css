@@ -1,4 +1,4 @@
-@import url("./normalize");
+/* @import url("./normalize"); */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 :root {
@@ -12,6 +12,7 @@
 
 body {
   font-family: Inter;
+  margin: 0;
 }
 
 header {
@@ -29,6 +30,44 @@ header {
 
 .menu {
   display: none;
+  position: absolute;
+  height: 100vh;
+  width: 70%;
+  top:-0;
+  right: 0;
+  background-color: var(--Off_white);
+  z-index: 2;
+  box-shadow: -200px 0px 2px rgba(0, 0, 0, .5);
+}
+
+.cerrar{
+  position: relative;
+  width: 100%;
+}
+
+.cerrar img{
+  position: absolute;
+  right: 1em;
+  top: 0;
+}
+
+.menu ul{
+  list-style: none;
+  width: 100%;
+}
+
+.menu > ul > li:nth-child(2){
+  margin-top: 5em;
+  color: red;
+}
+
+.menu li{
+  margin: 2em 1em 1em -1em;
+}
+
+.menu a{
+  color: var(--Very_dark_blue);
+  text-decoration: none;
 }
 
 main {
