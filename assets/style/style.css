@@ -1,0 +1,151 @@
+@import url("./normalize");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --orange: hsl(35, 77%, 62%);
+  --red: hsl(5, 85%, 63%);
+  --Off_white: hsl(36, 100%, 99%);
+  --Grayish_blue: hsl(233, 8%, 79%);
+  --Dark_grayish_blue: hsl(236, 13%, 42%);
+  --Very_dark_blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: Inter;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+
+.logo {
+  font-size: 3em;
+  font-weight: 800;
+  font-family: serif;
+}
+
+.menu {
+  display: none;
+}
+
+main {
+  margin: 2em 1em 1em 1em;
+}
+
+.portada {
+  overflow: hidden;
+}
+
+.portada > img {
+  width: 100%;
+}
+
+.titulo {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin: 0;
+  margin-top: .5em;
+}
+
+.articulo__principal {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.articulo__principal > p {
+  color: var(--Dark_grayish_blue);
+}
+
+.leer__mas {
+  background-color: var(--red);
+  width: 50%;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Off_white);
+  padding: 0.2em;
+}
+
+.leer__mas > span {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: var(--Off_white);
+}
+
+.nuevos {
+  background-color: var(--Very_dark_blue);
+  color: var(--Off_white);
+  padding: 1em;
+  margin-top: 4em;
+}
+
+.titulo__new {
+  color: var(--orange);
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.titulos {
+  font-weight: 800;
+  font-size: 1.2em;
+  color: var(--Off_white);
+  margin-top: 2em;
+}
+.nuevos > p {
+  color: var(--Grayish_blue);
+  margin-bottom: 2em;
+}
+
+.cards {
+  margin-top: 5em;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: calc(35% - 1em) 65%;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  margin-bottom: 2em;
+}
+
+.img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img > img {
+  width: 100%;
+}
+
+.cuerpo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: .5em;
+}
+
+.cuerpo > span{
+  font-size: 2em;
+  color: var(--Grayish_blue);
+  font-weight: 700;
+}
+
+.cuerpo > h3{
+  font-size: 1.2em;
+  margin-top: .5em;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.cuerpo > p{
+  color: var(--Dark_grayish_blue);
+  line-height: 1.8em;
+  font-size: 15px;
+  margin-top: .5em;
+}
