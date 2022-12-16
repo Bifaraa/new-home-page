@@ -228,7 +228,7 @@ main {
   main{
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: 50% 25% 25%;
+    /* grid-template-rows: 50% 25% 25%; */
     margin: 0;
   }
 
@@ -246,7 +246,7 @@ main {
   .section__principal{
     width: 100%;
     grid-column: 1;
-    grid-row: 2/3;
+    /* grid-row: 2/3; */
   }
   
   .articulo__principal{
@@ -294,7 +294,6 @@ main {
 
   .cards{
     grid-column: 1/3;
-    grid-row: 3/4;
     display: flex;
     justify-content: space-between;
     width: 100%;
