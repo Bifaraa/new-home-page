@@ -30,7 +30,7 @@ header {
 
 .menu {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 70%;
   top: -0;
@@ -156,6 +156,8 @@ main {
 
 .img > img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cuerpo {
@@ -225,6 +227,10 @@ main {
     color: var(--Dark_grayish_blue);
   }
 
+  .menu a:hover{
+    color: var(--Very_dark_blue);
+  }
+
   main{
     display: grid;
     grid-template-columns: 70% 30%;
@@ -278,6 +284,11 @@ main {
     margin-top: 2em;
   }
 
+  .leer__mas:hover{
+    background-color: var(--Very_dark_blue);
+    cursor: pointer;
+  }
+
   .section__nuevos{
     width: calc(100% - 2em);
     height: 100%;
@@ -298,10 +309,20 @@ main {
     justify-content: space-between;
     width: 100%;
   }
-  
-  
 
   .card{
     justify-self: center;
+  }
+
+  .img > img{
+    height: 80%;
+  }
+
+  .card h3:hover{
+    color: var(--red);
+  }
+
+  .titulos:hover{
+    color: var(--orange);
   }
 }
